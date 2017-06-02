@@ -15,9 +15,11 @@ func main(){
 		div = primes[i]
 		for div <= 20 {
 			div *=primes[i]
+			
 		}
 		div /= primes[i]
 		out *= div
+		fmt.Println(out)
 	}
 	fmt.Println(out)
 	fmt.Println(time.Since(starttime));
